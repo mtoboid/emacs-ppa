@@ -32,7 +32,7 @@ Using the PPA
      X-Repolib-Name: PPA Emacs mtoboid
      Signed-By: /usr/share/keyrings/mtoboid-ppa.gpg
      Types: deb
-     URIs: http://mtoboid.github.io/emacs-ppa/debian
+     URIs: https://mtoboid.github.io/emacs-ppa/debian
      Suites: bullseye
      Components: main
      Architectures: amd64
