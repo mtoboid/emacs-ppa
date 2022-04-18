@@ -1,0 +1,74 @@
+Package: emacs
+Binary: emacs, emacs-lucid, emacs-nox, emacs-gtk, emacs-bin-common, emacs-common, emacs-el
+Version: 1:27.1+1-3.1mtoboid1
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Build-Depends: bsd-mailx | mailx, libncurses5-dev, texinfo, liblockfile-dev, librsvg2-dev, dbus-x11, git, gnupg-agent, libgif-dev, libtiff-dev, libsystemd-dev, procps, xaw3dg-dev, libpng-dev, libjpeg-dev, libm17n-dev, libotf-dev, libgpm-dev [linux-any], libdbus-1-dev, autoconf, automake, dpkg-dev (>> 1.10.0), quilt (>= 0.42), debhelper (>= 10), libxaw7-dev, sharutils, imagemagick, libcairo-dev, libgmp-dev, libgtk-3-dev, libgnutls28-dev, libxml2-dev, libselinux1-dev [linux-any], libharfbuzz-dev, libjansson-dev, libasound2-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64], libmagick++-6.q16-dev, libacl1-dev, liboss4-salsa-dev [hurd-i386 kfreebsd-i386 kfreebsd-amd64], zlib1g-dev
+Architecture: any all
+Standards-Version: 3.7.2
+Format: 3.0 (quilt)
+Directory: pool/main/e/emacs
+Files:
+ 27c021ed972b8fff341784e3f09e2b0b 58960 emacs_27.1+1-3.1mtoboid1.debian.tar.xz
+ 24f993f64f5425b245c8f81df46a9f77 1953 emacs_27.1+1-3.1mtoboid1.dsc
+ 4af8c300f3d4c5bb40ed08609d151caf 25483548 emacs_27.1+1.orig.tar.xz
+Checksums-Sha1:
+ 4abb23e651b87c29b1019196eebf8033b7ce416b 58960 emacs_27.1+1-3.1mtoboid1.debian.tar.xz
+ c7c00a85bcd490f4c5e8d6c77547854391e1b433 1953 emacs_27.1+1-3.1mtoboid1.dsc
+ fa38330a1a57cf7a01ee8128f0faf2dd0117f703 25483548 emacs_27.1+1.orig.tar.xz
+Checksums-Sha256:
+ dd1c9b288bd7f132c9aab0be3f501e7f35279a609bdde71179f27e180df5ba4f 58960 emacs_27.1+1-3.1mtoboid1.debian.tar.xz
+ abf1041aa3bfc6113ec3cc80bb71741a5b9c285b0eb45ac43624fad18860950f 1953 emacs_27.1+1-3.1mtoboid1.dsc
+ 7d6ab812795a2fcfef923b053f486bb9aff09fc427a0ff53169ee9c95e96b8f0 25483548 emacs_27.1+1.orig.tar.xz
+Checksums-Sha512:
+ a6eb74dcb36e5d5eb211ea471c881296d5d73e0b31be6dc26d43371391fb75fccd135aaf57b72b67320949e2f3a7318db95b25349b4fe0fca3b8d6cf84f589bf 58960 emacs_27.1+1-3.1mtoboid1.debian.tar.xz
+ 37dcc0f907558d17e0a2fc9eedd1dcd02e9eb5adb86e1c42a51b73d2eb3f66cc0130391a83964c50f00f07a80f40be878982ed6d4fb65ec684559546357f581c 1953 emacs_27.1+1-3.1mtoboid1.dsc
+ 863780f716c7e4feea4a598a01e555c89d4e598031e2d8186066f2c2d195a8521ce8d9e812f1518f332b04af22e8dee207211921ed80a75c7daeb8378de9861b 25483548 emacs_27.1+1.orig.tar.xz
+Homepage: https://www.gnu.org/software/emacs/
+Package-List:
+ emacs deb editors optional arch=all
+ emacs-bin-common deb editors optional arch=any
+ emacs-common deb editors optional arch=all
+ emacs-el deb editors optional arch=all
+ emacs-gtk deb editors optional arch=any
+ emacs-lucid deb editors optional arch=any
+ emacs-nox deb editors optional arch=any
+Vcs-Browser: https://salsa.debian.org/rlb/deb-emacs
+Vcs-Git: https://salsa.debian.org/rlb/deb-emacs.git
+
+Package: emacs
+Binary: emacs, emacs-lucid, emacs-nox, emacs-gtk, emacs-bin-common, emacs-common, emacs-el
+Version: 1:27.1+1-3.1
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Build-Depends: bsd-mailx | mailx, libncurses5-dev, texinfo, liblockfile-dev, librsvg2-dev, dbus-x11, git, gnupg-agent, libgif-dev, libtiff-dev, libsystemd-dev, procps, xaw3dg-dev, libpng-dev, libjpeg-dev, libm17n-dev, libotf-dev, libgpm-dev [linux-any], libdbus-1-dev, autoconf, automake, dpkg-dev (>> 1.10.0), quilt (>= 0.42), debhelper (>= 10), libxaw7-dev, sharutils, imagemagick, libcairo-dev, libgmp-dev, libgtk-3-dev, libgnutls28-dev, libxml2-dev, libselinux1-dev [linux-any], libharfbuzz-dev, libjansson-dev, libasound2-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64], libmagick++-6.q16-dev, libacl1-dev, liboss4-salsa-dev [hurd-i386 kfreebsd-i386 kfreebsd-amd64], zlib1g-dev
+Architecture: any all
+Standards-Version: 3.7.2
+Format: 3.0 (quilt)
+Directory: pool/main/e/emacs
+Files:
+ 97369f6980175cb7e010524d23140c9c 58868 emacs_27.1+1-3.1.debian.tar.xz
+ 9918a45f4df3c9b1a391c7f09a1f5424 2833 emacs_27.1+1-3.1.dsc
+ 4af8c300f3d4c5bb40ed08609d151caf 25483548 emacs_27.1+1.orig.tar.xz
+Checksums-Sha1:
+ 02d10567570f7a1fc3f1566befc56c32e45dfa98 58868 emacs_27.1+1-3.1.debian.tar.xz
+ 2855da4069ec028c47c9a2de0a9f776b7e4b9e52 2833 emacs_27.1+1-3.1.dsc
+ fa38330a1a57cf7a01ee8128f0faf2dd0117f703 25483548 emacs_27.1+1.orig.tar.xz
+Checksums-Sha256:
+ a254fbdcd1ff75abe73514b79a1a1676b13b4156dc8ec7143237c786213b9bb5 58868 emacs_27.1+1-3.1.debian.tar.xz
+ cc2b93a92d929eb074239f0dbe816008e0b7e6e9061c4d2d73ee53836fca9ec1 2833 emacs_27.1+1-3.1.dsc
+ 7d6ab812795a2fcfef923b053f486bb9aff09fc427a0ff53169ee9c95e96b8f0 25483548 emacs_27.1+1.orig.tar.xz
+Checksums-Sha512:
+ fea6b4fe75b115bd5d43660d2dbad1c6c68099f0e16f0ae3ce286019a28ec54f489672ebdf5369069b484f283c41f86f59364b971b1d3cb46ee5565215585f45 58868 emacs_27.1+1-3.1.debian.tar.xz
+ 81a6715e604628ab6169efd81fde01930bb3e1e05aa549e1ba7cd968e79a74b41b70604ff5cb748359b995e568ae44609b1f993f4b9f3877916c12660a5ddcdb 2833 emacs_27.1+1-3.1.dsc
+ 863780f716c7e4feea4a598a01e555c89d4e598031e2d8186066f2c2d195a8521ce8d9e812f1518f332b04af22e8dee207211921ed80a75c7daeb8378de9861b 25483548 emacs_27.1+1.orig.tar.xz
+Homepage: https://www.gnu.org/software/emacs/
+Package-List:
+ emacs deb editors optional arch=all
+ emacs-bin-common deb editors optional arch=any
+ emacs-common deb editors optional arch=all
+ emacs-el deb editors optional arch=all
+ emacs-gtk deb editors optional arch=any
+ emacs-lucid deb editors optional arch=any
+ emacs-nox deb editors optional arch=any
+Vcs-Browser: https://salsa.debian.org/rlb/deb-emacs
+Vcs-Git: https://salsa.debian.org/rlb/deb-emacs.git
+

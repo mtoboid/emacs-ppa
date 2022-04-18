@@ -1,0 +1,246 @@
+Package: emacs
+Priority: optional
+Section: editors
+Installed-Size: 76
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: all
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-gtk (>= 1:27.1) | emacs-lucid (>= 1:27.1) | emacs-nox (>= 1:27.1)
+Filename: pool/main/e/emacs/emacs_27.1+1-3.1mtoboid1_all.deb
+Size: 45232
+MD5sum: 424429531859416a734c47a4ccec80c2
+SHA1: b85949834bb9645afffab62b468f32afd6ff440b
+SHA256: f335e563c9e3171bbd4e2b6b06a4714b9f9a3064a3b1e3c86d46197392db1070
+SHA512: 3b547b400a1631728f4da0bf58dd5a208df2d333d4811c5d4354d70109d5db6495a8815c665af1f5b48d03e8f40d1a9b6aec0e14ca357c70cf645390f0545078
+Description: GNU Emacs editor (metapackage)
+ GNU Emacs is the extensible self-documenting text editor.
+ This is a metapackage that will always depend on the latest
+ recommended Emacs variant (currently emacs-gtk).
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-bin-common
+Priority: optional
+Section: editors
+Installed-Size: 495
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-common (= 1:27.1+1-3.1mtoboid1), libc6 (>= 2.14)
+Recommends: mailutils
+Filename: pool/main/e/emacs/emacs-bin-common_27.1+1-3.1mtoboid1_amd64.deb
+Size: 154804
+MD5sum: a596e6e8210cc5b5c1a78593db8b9634
+SHA1: ccb92843e8191fb1c57292fde7b4dd09f60b39fd
+SHA256: b6849e9b1fd2e6283c574220c3a3d50af2e0c94069054624c5a606b1dee2bfd7
+SHA512: 459f782083dd23759de74f964b796f2a9f94d2630a00510a2282fd43d6f39dd8667014f0c0c0fc403c4de3e6c8adc8ac54e1520408fd7cc50f1c526a0f6a6aa2
+Description: GNU Emacs editor's shared, architecture dependent files
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the architecture dependent infrastructure
+ that's shared by emacs-gtk, emacs-lucid, and emacs-nox.
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-bin-common-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 520
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-bin-common (= 1:27.1+1-3.1mtoboid1)
+Filename: pool/main/e/emacs/emacs-bin-common-dbgsym_27.1+1-3.1mtoboid1_amd64.deb
+Size: 462096
+MD5sum: de02d034602d091359e72a587ef0c341
+SHA1: 1358f44caaa6b0f6e77d8fac69bf56fc892b87fa
+SHA256: 98677a917066fcc4c73e9469c36c8a224e43aab50a5c67058e1c6a868dbce477
+SHA512: 3b378dcab530f1d832270c1c988aba02e1f30684d1edcb3aab30e7a09604905804082e4c8e82f3dd7e0bba52f215084e15cd1dbf3bbbcad1daae8312e26edb44
+Description: debug symbols for emacs-bin-common
+Auto-Built-Package: debug-symbols
+Build-Ids: 48978302f884d603864b4da3549fd1d8c95b17c3 707a0fb20d4591b757f72b1eda962feab41a51c4 9f2af1d28e6bf62d4d20b6b65e2ba2b5fda94e02 bb2780955512b9f223576d1c512b2b1fa0b91943 e086c46aa366b22d26b95a29e221196f24dfad30
+
+Package: emacs-common
+Priority: optional
+Section: editors
+Installed-Size: 68907
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: all
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacsen-common (>= 3.0.0), install-info
+Recommends: emacs-el
+Suggests: emacs-common-non-dfsg, ncurses-term
+Conflicts: cedet, eieio, emacs-el (<< 1:27.1+1-3.1mtoboid1), gnus-bonus-el, speedbar
+Breaks: apel (<< 10.8+0.20120427-4), edb (<< 1.32), egg (<< 4.2.0-2), emacs (<< 1:25), emacs-gtk (<< 1:25), emacs-lucid (<< 1:25), emacs-nox (<< 1:25), emacs21, emacs21-nox, emacs22, emacs22-gtk, emacs22-nox, emacs23, emacs23-lucid, emacs23-nox, emacs24, emacs24-lucid, emacs24-nox, emacs25, emacs25-lucid, emacs25-nox
+Filename: pool/main/e/emacs/emacs-common_27.1+1-3.1mtoboid1_all.deb
+Size: 13689024
+MD5sum: c2530493562bb645847fa0d25c9eb510
+SHA1: 33ed2a450877ac7f15119621cc1b42a6f75b083a
+SHA256: faa328f9c6a5d05c2eb9efb32c493940270f26d9d4a167e6d726bed32f88d9f5
+SHA512: 3d907856ae576c44b5832e89fe37bde43d073cd939269eea90c2a3c483d1c16470970c4b94d0ed569b131a8488096f94c462642ac1b5d4ae446833c3914b004e
+Description: GNU Emacs editor's shared, architecture independent infrastructure
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the architecture independent infrastructure
+ that's shared by emacs-gtk, emacs-lucid, and emacs-nox.
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-el
+Priority: optional
+Section: editors
+Installed-Size: 16560
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: all
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-common (= 1:27.1+1-3.1mtoboid1)
+Filename: pool/main/e/emacs/emacs-el_27.1+1-3.1mtoboid1_all.deb
+Size: 16318168
+MD5sum: b278add7203b740c197ac88fc2d38172
+SHA1: 211e9bff58c5fc1fbf3b02aba3aaf0999cccd9da
+SHA256: 8ce16abdc01b3f7dfd6c6a844ff5c137da0305c6fd78952b5107ee341b45eaf0
+SHA512: e26d3b57c3383a11408e10f4f27c87ced520fc7b05a09f662088cfc7959366e12f35cba7191eba4e82a7ecbc2b0f0c83d5175cdfc447a0b18dc1db3323f63e05
+Description: GNU Emacs LISP (.el) files
+ GNU Emacs is the extensible self-documenting text editor.
+ This package contains the elisp sources for the convenience of users,
+ saving space in the main package for small systems.
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-gtk
+Priority: optional
+Section: editors
+Installed-Size: 19507
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Replaces: emacs-lucid, emacs-nox
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:27.1+1-3.1mtoboid1), emacs-common (= 1:27.1+1-3.1mtoboid1), libacl1 (>= 2.2.23), libasound2 (>= 1.0.16), libc6 (>= 2.29), libcairo2 (>= 1.10.0), libdbus-1-3 (>= 1.9.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0 (>= 2.37.3), libgmp10 (>= 2:6.0.0), libgnutls30 (>= 3.7.0), libgpm2 (>= 1.20.7), libgtk-3-0 (>= 3.21.4), libharfbuzz0b (>= 0.9.42), libice6 (>= 1:1.0.0), libjansson4 (>= 2.7), libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.2+git20110628), libm17n-0 (>= 1.6.1), libotf0 (>= 0.9.11), libpango-1.0-0 (>= 1.18.0), libpng16-16 (>= 1.6.2-1), librsvg2-2 (>= 2.32.0), libselinux1 (>= 3.1~), libsm6, libsystemd0, libtiff5 (>= 4.0.3), libtinfo6 (>= 6), libx11-6, libxext6, libxfixes3 (>= 1:4.0.1), libxml2 (>= 2.7.4), libxrender1, zlib1g (>= 1:1.1.4)
+Suggests: emacs-common-non-dfsg
+Conflicts: emacs-lucid, emacs-nox
+Filename: pool/main/e/emacs/emacs-gtk_27.1+1-3.1mtoboid1_amd64.deb
+Size: 3312836
+MD5sum: b26af2927455f0b7c8d59da90bf747d8
+SHA1: cd20968669c6ec31235a2e3854ee902ae6c61625
+SHA256: cacfd9bb9121cdb1324130798ec6c5b75f1fbc4ea5b49c5e6f9b79ff8e4019eb
+SHA512: d5c7f2135358f4c4878e73a3fc76628b6b10ae117ddf9428f070d6e24c641acd6e0144e4d5e6102066a3691f5ae6264b149af5409aed52caba3a22f016ecc419
+Description: GNU Emacs editor (with GTK+ GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs with a graphical user interface
+ based on GTK+ (instead of the Lucid toolkit provided by the
+ emacs-lucid package).
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-gtk-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 7261
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-gtk (= 1:27.1+1-3.1mtoboid1)
+Filename: pool/main/e/emacs/emacs-gtk-dbgsym_27.1+1-3.1mtoboid1_amd64.deb
+Size: 7012488
+MD5sum: a4aa27f513d6a19f676647eca4f38744
+SHA1: b588a62e7442ab2e6b2ab0e88a2b6ed5a939971f
+SHA256: 095eb64bbd02a8ea332b713171ef8ae3e01df72bcd9524503cf54e9903f7bae8
+SHA512: 530a857dc969368f06ef56dd4a3db58e1cc59bc634de05b5d8981fef6ea362ab83c7744cef164643060a7cb19aea6d4eafdc6ea661338f17afcaaa86ad60df4d
+Description: debug symbols for emacs-gtk
+Auto-Built-Package: debug-symbols
+Build-Ids: 2b8c22a8d5bb749b6ab3d58dc355ed06090a0142
+
+Package: emacs-lucid
+Priority: optional
+Section: editors
+Installed-Size: 19517
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Replaces: emacs-gtk, emacs-nox
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:27.1+1-3.1mtoboid1), emacs-common (= 1:27.1+1-3.1mtoboid1), libacl1 (>= 2.2.23), libasound2 (>= 1.0.16), libc6 (>= 2.29), libdbus-1-3 (>= 1.9.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libgdk-pixbuf-2.0-0 (>= 2.22.0), libgif7 (>= 5.1), libglib2.0-0 (>= 2.16.0), libgmp10 (>= 2:6.0.0), libgnutls30 (>= 3.7.0), libgpm2 (>= 1.20.7), libharfbuzz0b (>= 0.9.42), libice6 (>= 1:1.0.0), libjansson4 (>= 2.7), libjpeg62-turbo (>= 1.3.1), liblcms2-2 (>= 2.2+git20110628), libm17n-0 (>= 1.6.1), libotf0 (>= 0.9.11), libpng16-16 (>= 1.6.2-1), librsvg2-2 (>= 2.32.0), libselinux1 (>= 3.1~), libsm6, libsystemd0, libtiff5 (>= 4.0.3), libtinfo6 (>= 6), libx11-6, libxext6, libxfixes3 (>= 1:4.0.1), libxft2 (>> 2.1.1), libxinerama1, libxml2 (>= 2.7.4), libxmu6, libxpm4, libxrandr2 (>= 2:1.2.99.3), libxrender1, libxt6, xaw3dg (>= 1.5+E-1), zlib1g (>= 1:1.1.4)
+Suggests: emacs-common-non-dfsg
+Conflicts: emacs-gtk, emacs-nox
+Filename: pool/main/e/emacs/emacs-lucid_27.1+1-3.1mtoboid1_amd64.deb
+Size: 3303764
+MD5sum: 0c7216ca08527ee6bb6d91f8eeb21249
+SHA1: 2b0b1d786185a5c8dca9f51d60355a600a5dbb36
+SHA256: 37b25cd72477b3edfbcb36dc45ad923028fb9b72d791dae494a42fefe0dad92e
+SHA512: 9a3b0db52e4dc159de02c1a35fc943eabd5c17e0255999b6366420f34cd2d1cc1e7a2a5f4400a14163ee0e8c301de0bd608313cd722e2e024dda9af37add7689
+Description: GNU Emacs editor (with Lucid GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs with support for a graphical user
+ interface based on the Lucid toolkit (instead of the GTK+ interface
+ provided by the emacs-gtk package).  Until some known GTK+
+ problems are fixed, this version may help avoid crashing Emacs during
+ an emacsclient disconnect.  See
+ https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=567934 and
+ https://bugzilla.gnome.org/show_bug.cgi?id=85715 for more
+ information.
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-lucid-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 7322
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-lucid (= 1:27.1+1-3.1mtoboid1)
+Filename: pool/main/e/emacs/emacs-lucid-dbgsym_27.1+1-3.1mtoboid1_amd64.deb
+Size: 7081944
+MD5sum: 7b02b717d08b8a8e80ad8c61222fd78e
+SHA1: dd4519d3bea1e8eccc72a8341b8a31a32198217c
+SHA256: ecec614b7ca9758ace328e4edc1958e5756b93fbb8fcd5cb768d682cc15c3444
+SHA512: c42782c32cae0c015e7c5bbbeb8ab72a202648c0b89789f3c07bb137f44d7a0b5e1f33264e09741bee6127ee4efea649150bc185cfb7d28855c7ccc1e3401a1f
+Description: debug symbols for emacs-lucid
+Auto-Built-Package: debug-symbols
+Build-Ids: ba14d05556078b157b0e9225c98eb1906a8f049e
+
+Package: emacs-nox
+Priority: optional
+Section: editors
+Installed-Size: 18364
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Replaces: emacs-gtk, emacs-lucid
+Provides: editor, emacs, emacsen, info-browser, mail-reader, news-reader
+Depends: emacs-bin-common (= 1:27.1+1-3.1mtoboid1), emacs-common (= 1:27.1+1-3.1mtoboid1), libacl1 (>= 2.2.23), libasound2 (>= 1.0.16), libc6 (>= 2.29), libdbus-1-3 (>= 1.9.14), libgmp10 (>= 2:6.0.0), libgnutls30 (>= 3.7.0), libgpm2 (>= 1.20.7), libjansson4 (>= 2.7), liblcms2-2 (>= 2.2+git20110628), libselinux1 (>= 3.1~), libsystemd0, libtinfo6 (>= 6), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Suggests: emacs-common-non-dfsg
+Conflicts: emacs-gtk, emacs-lucid
+Filename: pool/main/e/emacs/emacs-nox_27.1+1-3.1mtoboid1_amd64.deb
+Size: 2977164
+MD5sum: 436a309a8d7efc420deff0fbf5b927c3
+SHA1: 5d97f74b70b8b2ffb28c5caca045d4f565c3637d
+SHA256: d550a9566fb137d75740b03e0623e8b8dfdaa1eb0dafc472c77bb59411635d4c
+SHA512: 3864051acfe140a05db46e30c5f6c23b04eed243272bb0ba053f9d716d1770dde66dbb6f81898ef415d69214f952b309a7f4933a19482a7e509e850f54047c85
+Description: GNU Emacs editor (without GUI support)
+ GNU Emacs is the extensible self-documenting text editor.  This
+ package contains a version of Emacs compiled without support for X,
+ and provides only a text terminal interface.
+Homepage: https://www.gnu.org/software/emacs/
+
+Package: emacs-nox-dbgsym
+Priority: optional
+Section: debug
+Installed-Size: 5529
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: amd64
+Source: emacs
+Version: 1:27.1+1-3.1mtoboid1
+Depends: emacs-nox (= 1:27.1+1-3.1mtoboid1)
+Filename: pool/main/e/emacs/emacs-nox-dbgsym_27.1+1-3.1mtoboid1_amd64.deb
+Size: 5317864
+MD5sum: 42071229edce1f9872a2244a5ed79519
+SHA1: f20051b9e2e79b257c6b6defd036f8d5647052db
+SHA256: ebb6d5b4c8cfd2a6f8d329f2993a34c488d12b1fdb52c763af97afa19c39aa06
+SHA512: e2a68ed8bd8b0d1d1ceb701d93d2924bbd42da2097d96c9d3966c1b098c752693618e281d248bd5a80a11a6e9aa69f889b5441b1356d27b9f2d00bc3cdb92e8c
+Description: debug symbols for emacs-nox
+Auto-Built-Package: debug-symbols
+Build-Ids: 20f3943aef82efb78b7e75283821790b77e0cd25
+

@@ -1,0 +1,5 @@
+Origin: debian bullseye
+Label: debian bullseye
+Archive: bullseye
+Architecture: source
+Component: main

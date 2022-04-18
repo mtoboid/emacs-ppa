@@ -15,7 +15,7 @@ GITHUB_PAGES_ROOT='https://mtoboid.github.io/emacs-ppa'
 #
 main() {
     cd "${SCRIPT_DIR}"
-    tree -H "${GITHUB_PAGES_ROOT}" -T "PPA mtoboid" -I "*.html|_*|*.sh" --prune --noreport --charset utf-8 -o index.html
+    tree -H "${GITHUB_PAGES_ROOT}" -T "PPA mtoboid" -I "*.html|_*|*.sh|*.rst" --prune --noreport --charset utf-8 -o index.html
 
     # remove links
     #
